@@ -1,0 +1,10 @@
+{
+    "targets": {
+        "Todo board": {
+            "inputs": [
+                "src/Main.elm"
+            ],
+            "output": "app.js"
+        }
+    }
+}
