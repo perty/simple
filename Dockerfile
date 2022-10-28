@@ -8,8 +8,6 @@ FROM maven:3.8.6-eclipse-temurin-19 as build
 
 COPY --from=frontend src src
 
-COPY .mvn .mvn
-COPY mvnw .
 COPY pom.xml .
 
 RUN mvn -DskipTests=true --batch-mode package
