@@ -1,0 +1,27 @@
+version: '3'
+services:
+
+  simple-db:
+    image: "postgres:latest"
+    container_name: simple-db
+    volumes:
+      - data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=simpleuser
+      - POSTGRES_PASSWORD=simplepw
+
+  simple-service:
+    build: .
+    container_name: simple-service
+    environment:
+      - spring_profiles_active=dev
+      - DB_SERVER=simple-db
+    ports:
+      - "5000:5000"
+    links:
+      - simple-db
+
+volumes:
+  data:

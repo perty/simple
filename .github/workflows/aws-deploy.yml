@@ -20,8 +20,7 @@ env:
   ECR_REPOSITORY: artcomputer-repo           # set this to your Amazon ECR repository name
   ECS_SERVICE: simple-service                 # set this to your Amazon ECS service name
   ECS_CLUSTER: simple-cluster                 # set this to your Amazon ECS cluster name
-  ECS_TASK_DEFINITION: aws/taskdef.json # set this to the path to your Amazon ECS task definition
-  # file, e.g. .aws/task-definition.json
+  ECS_TASK_DEFINITION: aws/taskdef.json
   CONTAINER_NAME: simple-container           # set this to the name of the container in the
   # containerDefinitions section of your task definition
 
