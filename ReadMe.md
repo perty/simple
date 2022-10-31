@@ -16,3 +16,7 @@ Run `scripts/build.sh`.
 
 Starts the service in a container and a database in another.
 
+## The GitHub actions
+
+TBD
+
