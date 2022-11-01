@@ -16,6 +16,6 @@ FROM eclipse-temurin:19-jre
 
 COPY --from=build target/simple-0.0.1-SNAPSHOT.jar simple.jar
 
-EXPOSE 5000
+EXPOSE 80
 
 ENTRYPOINT ["java", "-jar", "simple.jar"]
